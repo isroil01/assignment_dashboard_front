@@ -1,0 +1,113 @@
+/* Profile page container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 2rem;
+}
+
+/* Card styling */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+/* Title */
+.profile-title {
+  font-size: 32px;
+}
+
+/* User info container */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual info item */
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.profile-item:hover {
+  background-color: #f0f1f5;
+}
+
+/* Label and value */
+.profile-label {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.profile-value {
+  font-weight: 600;
+  color: #21212f;
+}
+
+/* Button */
+.profile-button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.profile-button:hover {
+  background-color: #1869eb;
+}
+
+/* Loading text */
+.profile-loading {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Error container */
+.profile-error {
+  border: 1px solid #ff4d4f; /* red border */
+  background-color: #fff1f0; /* light red background */
+  color: #cf1322; /* dark red text */
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Error message */
+.profile-error p {
+  margin: 4px 0;
+}
+
+/* Optional: make retry button if you add one */
+.profile-error button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #cf1322;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.profile-error button:hover {
+  background-color: #a8071a;
+}

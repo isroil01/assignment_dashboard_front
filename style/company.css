@@ -1,0 +1,101 @@
+.companies-page {
+  background-color: #f9fafc;
+}
+
+.companies-page h2 {
+  margin-bottom: 1.5rem;
+  font-size: 32px;
+  padding-left: 0.5rem;
+}
+
+.companies-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #ffffff;
+  border: 1px solid #ebeaea;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.companies-table th,
+.companies-table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ebeaea;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.companies-table th {
+  border-top: none;
+  font-size: 14px;
+  font-family: 400;
+  padding: 1rem 1rem;
+}
+
+.companies-table th {
+  background-color: #f5f8fa;
+  text-transform: uppercase;
+}
+
+.companies-table tbody tr {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.companies-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.companies-table td {
+  border-bottom: none;
+  vertical-align: middle;
+}
+
+/* Optional: make trend chart row less tall */
+.companies-table td:last-child {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+/* Loading state */
+.companies-loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #e8f0fe;
+  color: #1976d2;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* Error state */
+.companies-error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #fdecea;
+  color: #d32f2f;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid #f5c2c0;
+}
+
+/* No data state */
+.companies-no-data {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  font-style: italic;
+  background-color: #f0f0f0;
+  color: #555;
+  border-radius: 8px;
+  margin: 1rem 0;
+}

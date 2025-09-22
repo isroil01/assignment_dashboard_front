@@ -1,0 +1,161 @@
+{
+  "sidebar": {
+    "dashboard": "대시보드",
+    "companies": "회사",
+    "reports": "리포트",
+    "profile": "프로필",
+    "settings": "설정",
+    "logout": "로그아웃"
+  },
+  "topbar": {
+    "searchPlaceholder": "검색",
+    "userRole": "관리자"
+  },
+  "overview": {
+    "totalCountries": "총 국가 수",
+    "totalCompanies": "총 회사 수",
+    "highestEmittingCompany": "최고 배출 회사",
+    "topEmissionSource": "주요 배출 원",
+    "status": {
+      "loading": "개요 로딩 중...",
+      "error": "개요 불러오기 실패",
+      "noData": "표시할 데이터가 없습니다"
+    }
+  },
+  "chart": {
+    "companiesMonthlyEmissions": "회사 월별 배출량 비교",
+    "month": "월",
+    "emissions": "배출량 (톤 CO₂)",
+    "status": {
+      "loading": "차트 로딩 중...",
+      "error": "차트 데이터 불러오기 실패",
+      "noData": "표시할 차트 데이터가 없습니다"
+    }
+  },
+  "companies": {
+    "overviewTitle": "회사 개요",
+    "table": {
+      "company": "회사",
+      "country": "국가",
+      "totalEmissions": "총 배출량 (tCO₂)",
+      "avgMonthly": "월 평균",
+      "latestReport": "최신 보고서",
+      "trend": "추세"
+    },
+    "status": {
+      "loading": "회사 목록 로딩 중...",
+      "error": "회사 목록 불러오기 실패",
+      "noData": "표시할 회사가 없습니다"
+    }
+  },
+  "reports": {
+    "title": "회사 보고서",
+    "newReport": "새 보고서",
+    "status": {
+      "loading": "보고서 로딩 중...",
+      "error": "보고서 불러오기 실패",
+      "noData": "표시할 보고서가 없습니다"
+    }
+  },
+  "settings": {
+    "title": "계정 설정",
+    "loading": "설정 로딩 중...",
+    "username": "사용자 이름",
+    "email": "이메일",
+    "password": "비밀번호 변경",
+    "passwordPlaceholder": "********",
+    "notifications": {
+      "label": "알림",
+      "all": "전체",
+      "important": "중요 알림만",
+      "none": "알림 없음"
+    },
+    "language": {
+      "label": "언어",
+      "en": "영어",
+      "ko": "한국어"
+    },
+    "theme": {
+      "label": "테마 모드",
+      "light": "라이트",
+      "dark": "다크"
+    },
+    "status": {
+      "loading": "설정 로딩 중...",
+      "error": "설정 불러오기 실패",
+      "noData": "표시할 설정이 없습니다"
+    }
+  },
+  "profile": {
+    "loading": "불러오는 중...",
+    "title": "사용자 프로필",
+    "name": "이름:",
+    "email": "이메일:",
+    "role": "역할:",
+    "joined": "가입일:",
+    "status": {
+      "loading": "프로필 로딩 중...",
+      "error": "프로필 불러오기 실패",
+      "noData": "표시할 프로필이 없습니다"
+    }
+  },
+  "signin": {
+    "title": "로그인",
+    "email": "이메일",
+    "password": "비밀번호",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "********",
+    "button": "로그인",
+    "footer": "계정이 없으신가요?",
+    "signupLink": "회원가입",
+    "status": {
+      "loading": "로그인 중...",
+      "error": "로그인 실패",
+      "noData": "사용자 정보를 찾을 수 없습니다"
+    }
+  },
+  "signup": {
+    "title": "회원가입",
+    "username": "사용자 이름",
+    "email": "이메일",
+    "password": "비밀번호",
+    "usernamePlaceholder": "이름을 입력하세요",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "********",
+    "button": "회원가입",
+    "footer": "이미 계정이 있으신가요?",
+    "signinLink": "로그인",
+    "status": {
+      "loading": "회원가입 중...",
+      "error": "회원가입 실패",
+      "noData": "표시할 사용자 정보가 없습니다"
+    }
+  },
+  "createPost": {
+    "title": "새 보고서 생성",
+    "fields": {
+      "title": {
+        "label": "제목",
+        "placeholder": "보고서 제목"
+      },
+      "resourceUid": {
+        "label": "회사",
+        "placeholder": "회사 이름"
+      },
+      "dateTime": {
+        "label": "월",
+        "placeholder": "월 선택"
+      },
+      "content": {
+        "label": "내용",
+        "placeholder": "보고서 내용을 여기에 작성하세요..."
+      }
+    },
+    "button": "보고서 추가",
+    "status": {
+      "emptyFields": "모든 항목을 입력해주세요.",
+      "success": "보고서가 성공적으로 추가되었습니다.",
+      "error": "보고서 추가에 실패했습니다. 다시 시도해주세요."
+    }
+  }
+}

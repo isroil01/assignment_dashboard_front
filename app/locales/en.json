@@ -1,0 +1,161 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "companies": "Companies",
+    "reports": "Reports",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "topbar": {
+    "searchPlaceholder": "Search",
+    "userRole": "Admin"
+  },
+  "overview": {
+    "totalCountries": "Total Countries",
+    "totalCompanies": "Total Companies",
+    "highestEmittingCompany": "Highest Emitting Company",
+    "topEmissionSource": "Top Emission Source",
+    "status": {
+      "loading": "Loading overview...",
+      "error": "Failed to load overview",
+      "noData": "No overview data available"
+    }
+  },
+  "chart": {
+    "companiesMonthlyEmissions": "Companies Monthly Emissions Comparison",
+    "month": "Month",
+    "emissions": "Emissions (tons CO₂)",
+    "status": {
+      "loading": "Loading chart...",
+      "error": "Failed to load chart data",
+      "noData": "No chart data available"
+    }
+  },
+  "companies": {
+    "overviewTitle": "Companies Overview",
+    "table": {
+      "company": "Company",
+      "country": "Country",
+      "totalEmissions": "Total Emissions (tCO₂)",
+      "avgMonthly": "Avg Monthly",
+      "latestReport": "Latest Report",
+      "trend": "Trend"
+    },
+    "status": {
+      "loading": "Loading companies...",
+      "error": "Failed to load companies",
+      "noData": "No companies to display"
+    }
+  },
+  "reports": {
+    "title": "Company Reports",
+    "newReport": "New Report",
+    "status": {
+      "loading": "Loading reports...",
+      "error": "Failed to load reports",
+      "noData": "No reports to display"
+    }
+  },
+  "settings": {
+    "title": "Account Settings",
+    "loading": "Loading settings...",
+    "username": "Username",
+    "email": "Email",
+    "password": "Change Password",
+    "passwordPlaceholder": "********",
+    "notifications": {
+      "label": "Notifications",
+      "all": "All",
+      "important": "Important Only",
+      "none": "None"
+    },
+    "language": {
+      "label": "Language",
+      "en": "English",
+      "ko": "Korean"
+    },
+    "theme": {
+      "label": "Theme Mode",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "status": {
+      "loading": "Loading settings...",
+      "error": "Failed to load settings",
+      "noData": "No settings available"
+    }
+  },
+  "profile": {
+    "loading": "Loading profile...",
+    "title": "User Profile",
+    "name": "Name:",
+    "email": "Email:",
+    "role": "Role:",
+    "joined": "Joined:",
+    "status": {
+      "loading": "Loading profile...",
+      "error": "Failed to load profile",
+      "noData": "No profile data available"
+    }
+  },
+  "signin": {
+    "title": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "********",
+    "button": "Sign In",
+    "footer": "Don't have an account?",
+    "signupLink": "Sign Up",
+    "status": {
+      "loading": "Signing in...",
+      "error": "Failed to sign in",
+      "noData": "No user data found"
+    }
+  },
+  "signup": {
+    "title": "Sign Up",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "usernamePlaceholder": "Your name",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "********",
+    "button": "Sign Up",
+    "footer": "Already have an account?",
+    "signinLink": "Sign In",
+    "status": {
+      "loading": "Signing up...",
+      "error": "Failed to sign up",
+      "noData": "No user data available"
+    }
+  },
+  "createPost": {
+    "title": "Create New Report",
+    "fields": {
+      "title": {
+        "label": "Title",
+        "placeholder": "Report title"
+      },
+      "resourceUid": {
+        "label": "Company",
+        "placeholder": "Company name"
+      },
+      "dateTime": {
+        "label": "Month",
+        "placeholder": "Select month"
+      },
+      "content": {
+        "label": "Content",
+        "placeholder": "Write the report details here..."
+      }
+    },
+    "button": "Add Report",
+    "status": {
+      "emptyFields": "Please fill in all fields.",
+      "success": "Report added successfully.",
+      "error": "Failed to add report. Try again."
+    }
+  }
+}
