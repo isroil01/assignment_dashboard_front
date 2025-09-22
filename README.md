@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Carbon Emissions Dashboard
 
-## Getting Started
+This is a **web-based Carbon Emissions Dashboard** built as a frontend developer assignment for HanaLoop. It allows executives and managers to visualize greenhouse gas emissions of companies and their affiliates, helping them plan for carbon taxes and sustainability initiatives.
 
-First, run the development server:
+---
 
-```bash
+## 📝 Project Overview
+
+The dashboard includes:
+
+- **Navigation Drawer** for easy access to different pages.
+- **Dashboard Page** showing overview stats and emissions data using charts.
+- **Companies Page** displaying all companies with key metrics.
+- **Reports Page** to create and view monthly reports linked to companies.
+- **Profile Page** to show user info.
+- **Settings Page** to change language (English/Korean).
+- **Responsive Layout** for desktop and tablet screens.
+- **Loading and Error States** for realistic API behavior.
+
+The app is **frontend-focused**, using modern React and Next.js best practices with TypeScript.
+
+---
+
+## ⚙️ Tech Stack & Libraries
+
+- **Next.js 14+ + React 18 + TypeScript**: Framework and language for building a modern, type-safe frontend.
+- **Axios**: For HTTP requests to the mock API.
+- **React Query (`useQuery`)**: For fetching, caching, and managing server state efficiently. This avoids unnecessary re-fetches and improves performance.
+- **i18next (`react-i18next`)**: For multi-language support (English & Korean).
+- **Recharts**: For rendering interactive and responsive charts for emissions data.
+- **CSS**: Modular and maintainable styling for a clean design.
+- **Lucide React**: For lightweight icons.
+
+**Why these were chosen:**
+
+- `useQuery` + Axios provides **clean data fetching with caching, loading, and error states** out-of-the-box.
+- Recharts makes **visualizing emissions trends simple and interactive**.
+- i18n allows **multi-language support** for international users.
+- CSS keeps styling **simple, customizable, and performant**.
+
+---
+
+## 💾 Data Model
+
+The frontend uses the following types:
+
+**Company**
+```ts
+type Company = {
+  id: string;
+  name: string;
+  country: string;
+  emissions: GhgEmission[];
+};
+GhgEmission
+
+ts
+Copy code
+type GhgEmission = {
+  yearMonth: string;
+  source: string;
+  emissions: number;
+};
+Post
+
+ts
+Copy code
+type Post = {
+  id: string;
+  title: string;
+  resourceUid: string; // Company.id
+  dateTime: string;
+  content: string;
+};
+🖥 Pages Overview
+Dashboard Page:
+Shows overview cards with stats like total countries, total companies, highest emitter, and top emitting industry. Includes charts showing emissions trends.
+
+Companies Page:
+Lists all companies with key metrics such as country, total emissions, average monthly emissions, and latest report. Easy navigation to reports per company.
+
+Reports Page:
+Allows creating new reports and viewing existing reports linked to companies and months. Includes loading, error, and empty states.
+
+Profile Page:
+Displays user information (mocked for this assignment).
+
+Settings Page:
+Allows changing the language between English and Korean.
+
+🚀 How to Run Locally
+Clone the repository
+
+bash
+Copy code
+git clone https://github.com/isroil01/assignment_dashboard_front.git
+cd assignment_dashboard_front
+Install dependencies
+
+bash
+Copy code
+npm install
+Run the development server
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧩 Features & Assumptions
+Dashboard shows overview stats: total countries, total companies, highest emitter, top industry emitter.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Companies page lists all companies with emissions and latest reports.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Posts are linked to a company by resourceUid and month.
 
-## Learn More
+API simulates network latency (200–800ms) and occasional failures (15%) for realistic testing.
 
-To learn more about Next.js, take a look at the following resources:
+Multi-language support for English and Korean.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Focus is entirely on frontend implementation; backend is mocked for testing purposes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Responsive design prioritizes usability for managers and executives.
 
-## Deploy on Vercel
+📐 Architecture Overview
+Pages: Dashboard, Companies, Reports, Profile, Settings using Next.js App Router.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Components: Modular React components like OverviewCard, EmissionChart, CreatePost, CompanyCard.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Hooks: Custom hooks (useGetReports, useGetDashboard, useGetCompanies) using useQuery for fetching data.
+
+State Management: Local component state + React Query for server data.
+
+Error Handling: Loading, error, and empty states implemented for all data fetching.
+
+Design: Clean and modern with focus on usability and clarity.
+
+⚖️ Trade-offs & Notes
+No heavy UI libraries (e.g., MUI) were used to show custom component implementation skills.
+
+CSS-based styling instead of Tailwind to demonstrate control over design.
+
+Limited dataset for demonstration purposes.
+
+Mock API allows testing latency, error handling, and rollback behavior.
+
+⏱ Time to Complete
+Focused Time: ~8 hours
+
+Tools Used: VSCode, Node.js, Next.js, Git, GitHub
