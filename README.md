@@ -147,3 +147,5 @@ Mock API allows testing latency, error handling, and rollback behavior.
 Focused Time: ~8 hours
 
 Tools Used: VSCode, Node.js, Next.js, Git, GitHub
+
+## and i have included .env file on purpose because it will be easy to test and there is nothing importnat inside .env 
