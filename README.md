@@ -14,7 +14,6 @@ The dashboard includes:
 - **Reports Page** to create and view monthly reports linked to companies.
 - **Profile Page** to show user info.
 - **Settings Page** to change language (English/Korean).
-- **Responsive Layout** for desktop and tablet screens.
 - **Loading and Error States** for realistic API behavior.
 
 The app is **frontend-focused**, using modern React and Next.js best practices with TypeScript.
